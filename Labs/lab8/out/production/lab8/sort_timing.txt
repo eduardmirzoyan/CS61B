@@ -1,0 +1,20 @@
+Q: Is one sorting algorithm always faster than another?
+A: The Fastest algorthm was the counting sorter, followed by the built-in java sorter. The worst performing one was the bubble sorter
+
+Q: Above we said that BubbleSort, WipingBubbleSort, and InsertionSort each had the same Theta(N^2) asymptotic time complexity. How can you explain the differences in the plots for these three algorithms?
+A: Although they have an AVERAGE of N^2, based on how the radomly generated data is stacked, one may do visually better than the other sorters. Their best case and worse case time complexities are different
+
+Q: What information can we gain from empirical analysis of algorithms which might not be as noticeable in asymptotical bounds?
+A: We can learn how these algorithms perform in random situations rather than in their "best case" or "worst case"
+
+Q: For any given sorting algorithm, does increasing the array size always mean the sorting takes longer?
+A: Yes, most algorithms are based on the size of the array, such as N^2. The more elements, the more data that needs to be compared
+
+Q: How does changing nrepeats change the plot?
+A: Increasing nrepeats, increases the upper bound of the microseconds to finish running each sorter, 2 * nrepeats = 2 * time
+
+Q: Is your plot the exact same as your partner's plot, even with the same values of ntrials, by, and nrepeats?
+A: No, because since the data is randomly generated, even if we have the same parameters we may have generated different data points and had different sorting times
+
+Q: Optional: Look at the source code for BubbleSorter to WipingBubbleSorter. After looking at the plots, can you intuitively explain why WipingBubbleSorter is usually 2x as fast as BubbleSorter? (Hint: Consider the immobility of some elements when the swapping passes are single directional (i.e. only going forward), and how this "Wiping" strategy helps deal with that issue.) Can you come up with an example that shows the difference in runtime?
+A: Skipped.
